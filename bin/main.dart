@@ -22,7 +22,13 @@ main(List<String> arguments) {
   assert(add4(3) == 7);
 
 // ?? 表达式
-  String playerName(String name) => name ?? 'Guest';
+//  String playerName(String name) => name ?? 'Guest';
+//
+//  print(playerName("aa"));
 
-  print(playerName("aa"));
+  var callbacks = [];
+  for (var i = 0; i < 2; i++) {
+    callbacks.add(() => print(i));
+  }
+  callbacks.forEach((c) => c());
 }
