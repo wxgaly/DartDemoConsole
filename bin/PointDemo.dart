@@ -1,14 +1,24 @@
 import 'dart:math';
 
-
 main() {
+//  var point = Point(2, 2);
+//
+//  num dis = point.distanceTo(Point(4, 4));
+//
+//  print(dis);
 
-  var point = Point(2, 2);
+  void printF(int value) {
+    print(value);
+  }
 
-  num dis = point.distanceTo(Point(4, 4));
+  var list = [1, 2, 3];
 
-  print(dis);
+  var a = printF;
 
+  list.forEach(a);
+
+  for (var i = 0; i < list.length; i++) {
+    printF(list[i]);
+  }
 
 }
-
